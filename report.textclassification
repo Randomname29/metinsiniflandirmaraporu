@@ -1,0 +1,22 @@
+## 1. Giriş
+
+Bu rapor,“Makine Öğrenmesi ile Metin Sınıflandırma” konusuna odaklanmaktadır.Görev kapsamında kısa haber metinlerinden oluşan bir veri seti kullanılarak her bir metnin uygun kategoriye (örneğin: Dünya, Spor, İş Dünyası, Bilim/Teknoloji) otomatik olarak sınıflandırılması hedeflenmiştir.
+
+Bu bağlamda, metin işleme (NLP), vektörleştirme ve makine öğrenmesi teknikleri kullanılmıştır. Farklı sınıflandırma algoritmaları karşılaştırılarak model doğruluğu ve başarı ölçütleri incelenmiştir.
+
+
+## 2. Veri Seti
+
+Çalışmada kullanılan veri seti, **AG News Classification Dataset** adlı kamuya açık ve yaygın kullanılan bir metin sınıflandırma veri setidir. Veri seti, dört haber kategorisine (Dünya, Spor, İş Dünyası, Bilim/Teknoloji) ait kısa başlık ve özetlerden oluşmaktadır.  
+
+Veri setinin kaynağı: [Kaggle – AG News](https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset)
+
+### Temel Özellikler:
+- Format: CSV
+- Öznitelikler: `Class Index`, `Title`, `Description`
+- Toplam Kayıt Sayısı: 120.000 eğitim verisi, 7.600 test verisi
+- Etiketler:
+  - 1: World
+  - 2: Sports
+  - 3: Business
+  - 4: Sci/Tech
